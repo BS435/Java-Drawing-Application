@@ -45,7 +45,7 @@ public class Inicio extends javax.swing.JFrame {
         botonInsertarCirculo = new javax.swing.JButton();
         btnColorAzul = new javax.swing.JButton();
         btnDeshacer = new javax.swing.JButton();
-        btnDeshacer1 = new javax.swing.JButton();
+        btnRehacer = new javax.swing.JButton();
         menu = new javax.swing.JMenuBar();
         archivo = new javax.swing.JMenu();
         abrir = new javax.swing.JMenuItem();
@@ -75,8 +75,6 @@ public class Inicio extends javax.swing.JFrame {
             lienzoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 498, Short.MAX_VALUE)
         );
-
-        herramientas.setPreferredSize(new java.awt.Dimension(10, 10));
 
         lapiz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lapiz.png"))); // NOI18N
         lapiz.setAlignmentY(0.0F);
@@ -181,11 +179,11 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        btnDeshacer1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/rehacer.png"))); // NOI18N
-        btnDeshacer1.setPreferredSize(new java.awt.Dimension(30, 30));
-        btnDeshacer1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnRehacer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/rehacer.png"))); // NOI18N
+        btnRehacer.setPreferredSize(new java.awt.Dimension(30, 30));
+        btnRehacer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnDeshacer1MousePressed(evt);
+                btnRehacerMousePressed(evt);
             }
         });
 
@@ -209,7 +207,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnDeshacer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnDeshacer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnRehacer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(deslizador, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -243,7 +241,7 @@ public class Inicio extends javax.swing.JFrame {
                         .addComponent(btnColorAzul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(botonAmarillo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(botonRojo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnDeshacer1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRehacer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(tamanoDePincel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(8, 8, 8)
                 .addComponent(jLabel1))
@@ -261,14 +259,14 @@ public class Inicio extends javax.swing.JFrame {
                         .addComponent(lienzo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(88, Short.MAX_VALUE))
                     .addGroup(panel2Layout.createSequentialGroup()
-                        .addComponent(herramientas, javax.swing.GroupLayout.DEFAULT_SIZE, 988, Short.MAX_VALUE)
+                        .addComponent(herramientas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
         );
         panel2Layout.setVerticalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(herramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(herramientas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lienzo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(135, Short.MAX_VALUE))
@@ -370,9 +368,9 @@ public class Inicio extends javax.swing.JFrame {
         lienzo.deshacer();
     }//GEN-LAST:event_btnDeshacerMousePressed
 
-    private void btnDeshacer1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeshacer1MousePressed
+    private void btnRehacerMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRehacerMousePressed
         lienzo.rehacer();
-    }//GEN-LAST:event_btnDeshacer1MousePressed
+    }//GEN-LAST:event_btnRehacerMousePressed
 
     private void limpiarLienzoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_limpiarLienzoMousePressed
         lienzo.limpiarLienzo();
@@ -460,7 +458,7 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JButton botonRojo;
     private javax.swing.JButton btnColorAzul;
     private javax.swing.JButton btnDeshacer;
-    private javax.swing.JButton btnDeshacer1;
+    private javax.swing.JButton btnRehacer;
     private javax.swing.JSlider deslizador;
     private javax.swing.JMenuItem guardar;
     private javax.swing.JPanel herramientas;
