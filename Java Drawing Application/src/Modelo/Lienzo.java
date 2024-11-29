@@ -152,6 +152,7 @@ public class Lienzo extends javax.swing.JPanel {
     }  
     
     // Sobreescribir el metodo abstracto
+    
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -172,13 +173,13 @@ public class Lienzo extends javax.swing.JPanel {
     
     private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
        
-        // TRAZO
+        // Trazo
         if (trazoActivo && trazoActual != null) {
             trazoActual.addPoint(new Point(evt.getX(), evt.getY()));
             repaint();
         }
 
-        // FIGURA
+        // Figura
         if (figuraActiva && figuraActual != null) {
             Point inicio = figuraActual.getInicio();
             figuraActual.crearFigura(inicio, new Point(evt.getX(), evt.getY()), tipo);  
@@ -187,13 +188,13 @@ public class Lienzo extends javax.swing.JPanel {
     }//GEN-LAST:event_formMouseDragged
 
     private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
-        // TRAZO
+        // Trazo
         if (trazoActivo) {
             trazoActual = new Trazo(colorActual, grosorActual);
             trazoActual.addPoint(new Point(evt.getX(), evt.getY()));
         }
 
-        // FIGURA
+        // Figura
         if (figuraActiva) {
             figuraActual = new Figura(colorActual, grosorActual, new Point(evt.getX(), evt.getY()), new Point(evt.getX(), evt.getY()), tipo); 
         }
@@ -202,7 +203,7 @@ public class Lienzo extends javax.swing.JPanel {
     
     private void formMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseReleased
         
-        // TRAZOS
+        // Trazo
         if (trazoActivo && trazoActual != null) {
             trazoActual.addPoint(new Point(evt.getX(), evt.getY()));
             dibujos.add(trazoActual);
@@ -210,7 +211,7 @@ public class Lienzo extends javax.swing.JPanel {
             repaint();
         }
         
-        // FIGURAS
+        // Figura
         if (figuraActiva && figuraActual != null) {
             Point inicio = figuraActual.getInicio();
             figuraActual.crearFigura(inicio, new Point(evt.getX(), evt.getY()), tipo); 
