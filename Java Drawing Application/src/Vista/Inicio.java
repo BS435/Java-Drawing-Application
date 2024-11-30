@@ -48,7 +48,6 @@ public class Inicio extends javax.swing.JFrame {
         btnRehacer = new javax.swing.JButton();
         menu = new javax.swing.JMenuBar();
         archivo = new javax.swing.JMenu();
-        abrir = new javax.swing.JMenuItem();
         guardar = new javax.swing.JMenuItem();
         limpiarLienzo = new javax.swing.JMenuItem();
 
@@ -274,14 +273,6 @@ public class Inicio extends javax.swing.JFrame {
 
         archivo.setText("Archivo");
 
-        abrir.setText("Abrir imagen");
-        abrir.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                abrirMousePressed(evt);
-            }
-        });
-        archivo.add(abrir);
-
         guardar.setText("Guardar imagen");
         guardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -390,10 +381,6 @@ public class Inicio extends javax.swing.JFrame {
     private void lienzoMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lienzoMouseDragged
 
     }//GEN-LAST:event_lienzoMouseDragged
-
-    private void abrirMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_abrirMousePressed
-
-    }//GEN-LAST:event_abrirMousePressed
   
     
     /**
@@ -447,7 +434,6 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem abrir;
     private javax.swing.JMenu archivo;
     private javax.swing.JButton borrador;
     private javax.swing.JButton botonAmarillo;

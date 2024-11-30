@@ -4,6 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Usuario/Documents/GitHub/Java-Drawing-Application/Java%20Drawing%20Application/src/Vista/Inicio.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/Java-Drawing-Application/Java%20Drawing%20Application/src/Modelo/Lienzo.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/Java-Drawing-Application/Java%20Drawing%20Application/src/Modelo/Dibujo.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/Java-Drawing-Application/Java%20Drawing%20Application/src/Modelo/Trazo.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/Java-Drawing-Application/Java%20Drawing%20Application/src/Modelo/Figura.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/Java-Drawing-Application/Java%20Drawing%20Application/src/Vista/Main.java</file>
         </group>
     </open-files>
 </project-private>
